@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+
+<h1>Hello, world!</h1>
+<p>This is a simple HTML page created using Notepad.</p>
+
+</body>
+</html>
+
+
+
+2)  features of html:-
+
+It is easy to learn and easy to use.
+It is platform-independent.
+Images, videos, and audio can be added to a web page.
+Hypertext can be added to the text.
+It is a markup language.
+
+
+3)MIME is multipurpose internet mail extensions used for transfering data through electronic mails 
+
+4)
+i). HTML stands for Hypertext Markup language.
+ii). HTML is a markup language that is used to create web pages.
+iii). It is used to create the structure and layout of a webpage, including, heading, paragraph images, links, etc.
+iv). HTML documents are made up of elements that are represented by tags.
+
+5)
+void elements are the elements with opening tags but no closing tag
+such as <br>
+<hr> and etc
