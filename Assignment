@@ -1,0 +1,177 @@
+Assignment -1:
+
+
+Ques1)CREATE A TABLE WITH 4 ROWS AND 4 COLUMNS
+  THE COLUMN HEADERS SHOULD BE
+  1.STUDENT NO
+  2.STUDENT NAME
+  3.STUDENT COURSE
+  4.STUSENT FEES
+  
+  THE TABLE SHOULD HAVE A GREY BACKGROUND COLOR,BLACK BORDER AND 2PX CELL SPACING.TEXT SHOULD BE CENTER-ALIGNED. ALSO ADD PADDING 5px
+
+Ans)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        table {
+            background-color: grey;
+            border: 1px solid black;
+            border-collapse: separate;
+            border-spacing: 2px;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>STUDENT NO</th>
+            <th>STUDENT NAME</th>
+            <th>STUDENT COURSE</th>
+            <th>STUDENT FEES</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Computer Science</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane</td>
+            <td>Mathematics</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Emily</td>
+            <td>Biology</td>
+            <td>$1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Michael</td>
+            <td>History</td>
+            <td>$900</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+Ques2)CREATE AN ORDERED LIST CONTAINING GROCERY ITEMS 
+  (USE ROMAN NUMERALS FOR THE LIST-STYLE-TYPE)
+
+Ans)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <style>
+        ol {
+            list-style-type: upper-roman;
+        }
+    </style>
+</head>
+<body>
+    <h2>Grocery List</h2>
+    <ol>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Cheese</li>
+        <li>Apples</li>
+    </ol>
+</body>
+</html>
+
+Ques3) CREATE AN UNORDERED LIST CONTAINING GROCERY ITEMS.
+  (USE A CUSTOM SHAPES INSTEAD OF BULLET)
+
+Ans)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: "\2022"; /* Unicode character for bullet */
+            position: absolute;
+            left: 0;
+            color: green; /* Change color as needed */
+            font-size: 20px; /* Adjust size as needed */
+        }
+    </style>
+</head>
+<body>
+    <h2>Grocery List</h2>
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Cheese</li>
+        <li>Apples</li>
+    </ul>
+</body>
+</html>
+
+Ques4)   CRETE AN DEFINATION LIST FOR THE TERMS JAVA AND ANGULAR
+Ans)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definition List</title>
+</head>
+<body>
+    <h2>Definition List</h2>
+    <dl>
+        <dt>Java</dt>
+        <dd>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
+            It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), 
+            meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</dd>
+        
+        <dt>Angular</dt>
+        <dd>Angular is a platform and framework for building single-page client applications using HTML and TypeScript.
+            Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript
+            libraries that you import into your applications.</dd>
+    </dl>
+</body>
+</html>
+
+
+
+//More on the definition tags which are there in the list 
+	This code creates a definition list with terms "Java" and "Angular" and their respective definitions:
+
+The <dl> element is used to define the definition list.
+The <dt> elements are used for the terms "Java" and "Angular".
+The <dd> elements are used for their corresponding definitions.
+
+
+
+
