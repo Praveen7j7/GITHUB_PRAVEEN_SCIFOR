@@ -1,0 +1,95 @@
+Test 3:
+Ques1)What are the various formatting tag in html?
+Ans)
+HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+Ques2) How can we merge two rows or columns into single row and column? also write a code.
+Ans)	
+Can merge two or more table cells in a column using the colspan attribute in a <td> HTML tag (table data). To merge two or more row cells, use the rowspan attribute
+
+example:
+		<!DOCTYPE html>
+<html>
+<head>
+    <title>Combine Rowspan and Colspan Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Combine Rowspan and Colspan Example</h2>
+<table>
+    <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Details</th>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>Jane Smith</td>
+        <td>40</td>
+        <td>Female</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+
+Ques3) How is Cell spacing different from cellpadding ?
+Ans)
+cells pacing: controls the space between the borders of adjacent cells in a table. It is an attribute of the <table> tag and defines the space between cells.
+
+cellpadding:  controls the space between the content of a cell and the cell's border. It is also an attribute of the <table> tag.
+
+
+
+Ques4)What are Semantic Element?
+Ans)
+Semantic elements in HTML are those that clearly describe their meaning in a human- and machine-readable way. These elements not only define the structure of the webpage but also provide context and meaning to the content enclosed within them. This improves accessibility, SEO (Search Engine Optimization), and code readability
+
+eg) <header>, footer, nav, section etc.
+
+
+Ques5)Write a program to insert background image in html webpage.
+Ans)
+we can do this via 2 ways, one is using CSS and the second method is via the HTML format:
+
+// styles.css 
+
+body {
+    background-image: url('background.jpg');
+
+}
+Ques6)
+What is the alt attribute in html?
+Ans)
+The alt attribute in HTML is used within the <img> tag to provide alternative text for an image.
+	
+<img src="cat.jpg" alt="A cute tabby cat sitting on a windowsill.">
+
+
