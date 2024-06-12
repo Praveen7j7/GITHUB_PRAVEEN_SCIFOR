@@ -1,3 +1,4 @@
-let name = "ChatGPT";
-let age = 2024; // since I was launched in 2020 and it is now 2024
-let isStudent = false; // I am an AI, not a student
+let name = "Praveen"
+let age = 2024; 
+let isStudent = false; 
+document.write
