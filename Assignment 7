@@ -1,4 +1,6 @@
 let name = "Praveen"
 let age = 2024; 
 let isStudent = false; 
-document.write
+document.write("Name: " + name + "<br>");
+document.write("Age: " + age + "<br>");
+document.write("Is Student: " + isStudent);
