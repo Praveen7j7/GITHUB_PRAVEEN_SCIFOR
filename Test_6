@@ -1,0 +1,100 @@
+Ques1) 
+// Declare the numbers
+let num1 = 10;
+let num2 = 5;
+
+// Calculate addition
+let addition = num1 + num2;
+
+// Calculate subtraction
+let subtraction = num1 - num2;
+
+// Calculate multiplication
+let multiplication = num1 * num2;
+
+// Calculate division
+let division = num1 / num2;
+
+// Calculate remainder
+let remainder = num1 % num2;
+
+// Display the results
+console.log("Addition: " + num1 + " + " + num2 + " = " + addition);
+console.log("Subtraction: " + num1 + " - " + num2 + " = " + subtraction);
+console.log("Multiplication: " + num1 + " * " + num2 + " = " + multiplication);
+console.log("Division: " + num1 + " / " + num2 + " = " + division);
+console.log("Remainder: " + num1 + " % " + num2 + " = " + remainder);
+
+
+Ques2)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope Differences Example</title>
+</head>
+<body>
+
+<script>
+// Declare var, let, and const variables with string values
+var varString = "This is a var string";
+let letString = "This is a let string";
+const constString = "This is a const string";
+
+function scopeTest() {
+    if (true) {
+        var varInsideBlock = "var inside block";
+        let letInsideBlock = "let inside block";
+        
+        // Display the variables inside the block
+        document.write("Inside block - varInsideBlock: " + varInsideBlock + "<br>");
+        document.write("Inside block - letInsideBlock: " + letInsideBlock + "<br>");
+    }
+    
+    // Display the variables outside the block
+    document.write("Outside block - varInsideBlock: " + varInsideBlock + "<br>");
+    // Uncommenting the following line will cause an error because letInsideBlock is block-scoped
+    // document.write("Outside block - letInsideBlock: " + letInsideBlock + "<br>");
+}
+
+// Display the global variables
+document.write("Global varString: " + varString + "<br>");
+document.write("Global letString: " + letString + "<br>");
+document.write("Global constString: " + constString + "<br>");
+
+// Call the function to demonstrate scope
+scopeTest();
+</script>
+
+</body>
+</html>
+
+
+
+
+Ques3)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variable Types</title>
+</head>
+<body>
+
+<script>
+// Declare variables of different data types
+let stringValue = "Hello, world!";
+let numberValue = 42;
+let booleanValue = true;
+let nullValue = null;
+let undefinedValue;
+
+// Display the results using document.write()
+document.write("String value: " + stringValue + "<br>");
+document.write("Number value: " + numberValue + "<br>");
+document.write("Boolean value: " + booleanValue + "<br>");
+document.write("Null value: " + nullValue + "<br>");
+document.write("Undefined value: " + undefinedValue + "<br>");
+</script>
+
+</body>
+</html>
+
