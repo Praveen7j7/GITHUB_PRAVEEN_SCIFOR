@@ -1,0 +1,74 @@
+Test_7
+
+Ques1)write a program to determine if a given number is positive, negative or zero 
+
+Ans)
+function checkNumber(num) {
+    if (num > 0) {
+        console.log(num + " is a positive number.");
+    } else if (num < 0) {
+        console.log(num + " is a negative number.");
+    } else {
+        console.log(num + " is zero.");
+    }
+}
+
+// Test the function
+checkNumber(10);  // Output: 10 is a positive number.
+checkNumber(-5);  // Output: -5 is a negative number.
+checkNumber(0);   // Output: 0 is zero.
+
+
+Ques2)write a program using prompt to input a number (1-7). use a switch statement to print the corresponding day or 'INVALID DAY' for numbers outside this range
+
+Ans)
+// Prompt the user to input a number
+let num = parseInt(prompt("Enter a number between 1 and 7:"));
+
+// Determine the corresponding day using a switch statement
+switch (num) {
+    case 1:
+        console.log("Sunday");
+        break;
+    case 2:
+        console.log("Monday");
+        break;
+    case 3:
+        console.log("Tuesday");
+        break;
+    case 4:
+        console.log("Wednesday");
+        break;
+    case 5:
+        console.log("Thursday");
+        break;
+    case 6:
+        console.log("Friday");
+        break;
+    case 7:
+        console.log("Saturday");
+        break;
+    default:
+        console.log("INVALID DAY");
+}
+
+
+Ques3)write a program that determines whether a person is eligible to vote based on their age(voting age is 18 or older). using ternary operator
+
+Ans)
+// Prompt the user to enter their age
+let age = parseInt(prompt("Enter your age:"));
+
+// Determine eligibility to vote using the ternary operator
+let eligibility = (age >= 18) ? "You are eligible to vote." : "You are not eligible to vote.";
+
+// Display the result
+console.log(eligibility);
+
+Ques4)write a program to print number 1 to 10 using for loop
+Ans)
+// Loop from 1 to 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
