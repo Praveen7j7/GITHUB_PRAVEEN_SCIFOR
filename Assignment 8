@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <script>
+        // Function to perform addition
+        function add(a, b) {
+            return a + b;
+        }
+
+        // Function to perform subtraction
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        // Function to perform multiplication
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        // Function to perform division
+        function divide(a, b) {
+            if (b === 0) {
+                return "Error: Division by zero is not allowed.";
+            }
+            return a / b;
+        }
+
+        // Prompt the user to enter the first number
+        let num1 = parseFloat(prompt("Enter the first number:"));
+
+        // Prompt the user to enter the second number
+        let num2 = parseFloat(prompt("Enter the second number:"));
+
+        // Prompt the user to choose an operation
+        let operation = prompt("Choose an operation: addition (+), subtraction (-), multiplication (*), division (/)");
+
+        // Perform the chosen operation and store the result
+        let result;
+        if (operation === "+") {
+            result = add(num1, num2);
+        } else if (operation === "-") {
+            result = subtract(num1, num2);
+        } else if (operation === "*") {
+            result = multiply(num1, num2);
+        } else if (operation === "/") {
+            result = divide(num1, num2);
+        } else {
+            result = "Invalid operation!";
+        }
+
+        // Display the result
+        alert("The result is: " + result);
+    </script>
+</body>
+</html>
