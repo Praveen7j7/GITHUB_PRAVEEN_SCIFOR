@@ -1,0 +1,212 @@
+Test-8:
+
+//
+	
+Ques1)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Manipulation</title>
+</head>
+<body>
+    <h1>Date Manipulation</h1>
+    <p id="output"></p>
+    
+    <script>
+        function manipulateDate(date) {
+            // Get the current month from the date object
+            let currentMonth = date.getMonth();
+            
+            // Set the month of the date object to the next month
+            date.setMonth(currentMonth + 1);
+            
+            // Set the date of the date object to the 15th of the current month
+            date.setDate(15);
+            
+            // Get the full year of the adjusted date object
+            let adjustedYear = date.getFullYear();
+            
+            // Display the results
+            document.getElementById('output').innerText = `Adjusted Date: ${date.toDateString()}, Full Year: ${adjustedYear}`;
+        }
+
+        // Example usage
+        let inputDate = new Date(); // Current date
+        manipulateDate(inputDate);
+    </script>
+</body>
+</html>
+
+
+
+
+//
+
+Ques2)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Count</title>
+</head>
+<body>
+    <h1>Character Count</h1>
+    <p id="output"></p>
+
+    <script>
+        function countCharacters(charArray) {
+            // Initialize an empty object to store character counts
+            let charCount = {};
+
+            // Loop through the array of characters
+            for (let char of charArray) {
+                // If the character is already in the object, increment its count
+                if (charCount[char]) {
+                    charCount[char]++;
+                } else {
+                    // If the character is not in the object, add it with a count of 1
+                    charCount[char] = 1;
+                }
+            }
+
+            // Return the object with character counts
+            return charCount;
+        }
+
+        // Example usage
+        let charArray = ['a', 'b', 'a', 'c', 'b', 'a', 'd', 'c'];
+        let result = countCharacters(charArray);
+
+        // Display the result
+        document.getElementById('output').innerText = JSON.stringify(result);
+    </script>
+</body>
+</html>
+
+
+
+
+//
+
+Ques3)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse and Sort Array</title>
+</head>
+<body>
+    <h1>Reverse and Sort Array</h1>
+    <p id="output"></p>
+
+    <script>
+        function reverseAndSortArray(charArray) {
+            // Reverse the order of elements in the array
+            let reversedArray = charArray.reverse();
+
+            // Sort the reversed array in alphabetical order
+            let sortedArray = reversedArray.sort();
+
+            // Return the sorted array
+            return sortedArray;
+        }
+
+        // Example usage
+        let charArray = ['d', 'b', 'a', 'c', 'e'];
+        let result = reverseAndSortArray(charArray);
+
+        // Display the result
+        document.getElementById('output').innerText = JSON.stringify(result);
+    </script>
+</body>
+</html>
+
+
+
+//
+
+
+Ques4)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Format String</title>
+</head>
+<body>
+    <h1>Format String</h1>
+    <p id="output"></p>
+
+    <script>
+        function formatString(inputString) {
+            // Convert the entire string to uppercase
+            let upperCaseString = inputString.toUpperCase();
+
+            // Convert the entire string to lowercase
+            let lowerCaseString = inputString.toLowerCase();
+
+            // Extract a substring from index 2 to 5 (inclusive)
+            let substring = inputString.substring(2, 6); // 6 is non-inclusive, so it extracts characters at index 2, 3, 4, 5
+
+            // Return an object with the results
+            return {
+                upperCase: upperCaseString,
+                lowerCase: lowerCaseString,
+                substring: substring
+            };
+        }
+
+        // Example usage
+        let inputString = "HelloWorld";
+        let result = formatString(inputString);
+
+        // Display the result
+        document.getElementById('output').innerText = JSON.stringify(result, null, 2);
+    </script>
+</body>
+</html>
+
+
+
+//
+
+Ques5)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulate Array</title>
+</head>
+<body>
+    <h1>Manipulate Array</h1>
+    <p id="output"></p>
+
+    <script>
+        function manipulateArray(stringArray) {
+            // Add a new string "VOLVO" to the end of the array
+            stringArray.push("VOLVO");
+
+            // Remove the last element from the array
+            stringArray.pop();
+
+            // Iterate over each element in the array and convert each element to uppercase
+            let upperCaseArray = stringArray.map(element => element.toUpperCase());
+
+            // Join all elements of the array into a single string separated by commas
+            let joinedString = upperCaseArray.join(',');
+
+            // Return the final joined string
+            return joinedString;
+        }
+
+        // Example usage
+        let stringArray = ["Toyota", "BMW", "Mercedes"];
+        let result = manipulateArray(stringArray);
+
+        // Display the result
+        document.getElementById('output').innerText = result;
+    </script>
+</body>
+</html>
+
+
+
+
+
