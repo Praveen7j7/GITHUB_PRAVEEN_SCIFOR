@@ -1,0 +1,75 @@
+Ques1)
+A RESTful API (Representational State Transfer API) is an architectural style for designing networked applications. 
+It uses HTTP requests to perform CRUD operations (Create, Read, Update, Delete) on resources. 
+These resources are typically represented in formats like JSON or XML.
+
+Key principles of RESTful APIs include:
+
+Stateless: Each request from a client to the server must contain all the information needed to understand and process the request. 
+                              The server does not store any state about the client session on the server side.
+
+Client-Server Architecture: The client and server are separate entities that interact through a well-defined interface (the API).
+                              This separation allows the client and server to evolve independently.
+
+Cacheable: Responses must define themselves as cacheable or non-cacheable. 
+            If a response is cacheable, the client can reuse the data for subsequent requests, which can improve performance and reduce the load on the server.
+
+Uniform Interface: The API should have a consistent interface, making it easier to understand and use.   
+                    This is typically achieved through standardized HTTP methods such as GET, POST, PUT, DELETE.
+
+//
+Ques2)
+
+import React, { useState } from 'react';
+
+function App() {
+  const [num1, setNum1] = useState('');
+  const [num2, setNum2] = useState('');
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState('');
+
+  const handleDivide = () => {
+    setError('');
+    setResult(null);
+
+    const intNum1 = parseInt(num1, 10);
+    const intNum2 = parseInt(num2, 10);
+
+    if (isNaN(intNum1) || isNaN(intNum2)) {
+      setError('Please enter valid integers.');
+      return;
+    }
+
+    try {
+      if (intNum2 === 0) {
+        throw new Error('Division by zero is not allowed.');
+      }
+      setResult(intNum1 / intNum2);
+    } catch (e) {
+      setError(e.message);
+    }
+  };
+
+  return (
+    <div>
+      <h1>Divide Two Numbers</h1>
+      <input
+        type="text"
+        value={num1}
+        onChange={(e) => setNum1(e.target.value)}
+        placeholder="Enter the first integer"
+      />
+      <input
+        type="text"
+        value={num2}
+        onChange={(e) => setNum2(e.target.value)}
+        placeholder="Enter the second integer"
+      />
+      <button onClick={handleDivide}>Divide</button>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {result !== null && <p>The result of {num1} divided by {num2} is {result}</p>}
+    </div>
+  );
+}
+
+export default App;
